@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jay's Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="提供咖啡與輕食的咖啡店">    
+    <link rel="stylesheet" href="./scss/all.css">
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body id="top">
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="imm" src="./images/favicon.ico" alt="logo">
+                    <p class="text">Jay's Cafe</p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo_name">Jay's Cafe</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ui class="links">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li>
+                        <a href="">咖啡餐食</a>
+                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                        <ul class="htmlcss-sub-menu sub-menu">
+                            <li class="more">
+                                <a href="./menu/cafe.html">經典飲品</a>
+                                <!-- <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="">拿鐵</a></li>
+                                    <li><a href="">美式</a></li>
+                                </ul> -->
+                            </li>
+                            <li><a href="./menu/food.html">輕食</a></li>
+                            <li><a href="./menu/dessert.html">甜點</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./shop/shop.html">線上商店</a>
+                    </li>
+                    <li>
+                        <a href="./question.html">常見問題</a>
+                        <!-- <i class='bx bxs-chevron-down arrow js-arrow'></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="">咖啡</a></li>
+                            <li><a href="">甜點</a></li>
+                            <li><a href="">輕食</a></li>
+                            <li><a href="">如何購物</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-user"><a href="">會員登入</a></li>
+                </ui>
+            </div>
+
+            <div class="side-icon">
+                <!-- user -->
+                <div class="user-icon">
+                    <a href="./login.html">
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <a href="./shop/checkout.html">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </div>
+                <!-- search -->
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main -->
+    <section class="section-bg">
+        <h1>傑森咖啡</h1>
+        <a href="#section-introduce">
+            <i class='bx bx-chevrons-down dot'></i>
+        </a>
+    </section>
+
+    <section id="section-introduce" class="introduce">
+        <div class="text">
+            <h1>每顆咖啡都是精心嚴選</h1>
+            <p>我們提供各種不同種類咖啡，包括美式咖啡、拿鐵、卡布奇諾、濃縮咖啡等。<br>
+                使客戶可以根據自己的口味選擇。</p>
+            <a href="">
+                <button>熱銷咖啡</button>
+            </a>
+        </div>
+    </section>
+    <!-- news -->
+    <section class="news">
+        <div class="header"> 
+            <div class="image-one">
+                <a href="">
+                    <div class="shadow"></div>
+                    <img src="./images/index/cafe.jpg" alt="cafe">
+                    <p>經典咖啡</p>
+                </a>
+            </div>        
+            <div class="image-flex">
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img src="./images/index/dessert.jpg" alt="dessert">
+                        <p>甜點</p>
+                    </a>
+                </div>
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img class="move" src="./images/index/food.jpg" alt="food">
+                        <p>輕食</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header"> 
+            <div class="image-flex">
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img src="./images/index/about.jpg" alt="dessert">
+                        <p>關於我們</p>
+                    </a>
+                </div>
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img class="move" src="./images/index/question.jpg" alt="food">
+                        <p>常見問題</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image-one">
+                <a href="./shop.html">
+                    <div class="shadow"></div>
+                    <img src="./images/index/shop.jpg" alt="cafe">
+                    <p>線上商店</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 回頁首 -->
+    <div id="angle" class="angle mb-3">
+        <a href="#top">
+            <i class='bx bx-chevrons-up'></i>
+        </a>
+    </div>   
+    <footer>
+        <div class="logo">
+            <a href="./index.html">
+                <img class="imm" src="./images/favicon.ico" alt="logo">
+            </a>
+        </div>
+
+        <div class="text">
+            <ul>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">線上商店</a></li>
+                <li><a href="">常見問題</a></li>
+            </ul>
+            <p>DESIGN BY CHANG CHUN-CHIEH</p>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>

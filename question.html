@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+    <link rel="stylesheet" href="./scss/all.css">
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="imm" src="./images/favicon.ico" alt="logo">
+                    <p class="text">Jay's Cafe</p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo_name">Jay's Cafe</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ui class="links">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li>
+                        <a href="">咖啡餐食</a>
+                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                        <ul class="htmlcss-sub-menu sub-menu">
+                            <li class="more">
+                                <a href="./menu/cafe.html">經典飲品</a>
+                            </li>
+                            <li><a href="./menu/food.html">輕食</a></li>
+                            <li><a href="./menu/dessert.html">甜點</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./shop/shop.html">線上商店</a>
+                    </li>
+                    <li>
+                        <a href="./question.html">常見問題</a>
+                    </li>
+                    <li class="nav-user"><a href="">會員登入</a></li>
+                </ui>
+            </div>
+
+            <div class="side-icon">
+                <!-- user -->
+                <div class="user-icon">
+                    <a href="./login.html">
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <a href="./shop/checkout.html">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </div>
+                <!-- search -->
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section-bg-about">
+        <h1>常見問題</h1>
+        <!-- <p>堅持做最好的咖啡</p> -->
+    </section>
+
+    <ul id="accordion">
+        <li>
+            <label for="first">咖啡因含量是否有害健康？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="first">
+            <div class="content">
+                <p>咖啡因對大多數人是安全的，但過量攝入可能會導致不良影響，如失眠、心悸等。大多數人每天攝入的咖啡因量應保持在合理範圍內。</p>
+            </div>
+        </li>
+        <li>
+            <label for="second">哪種咖啡豆最好？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="second">
+            <div class="content">
+                <p>L最好的咖啡豆因個人口味而異。阿拉伯卡種的豆通常被視為品質較高，有較多的風味層次。地理來源、種植海拔和處理方法也影響咖啡的風味。</p>
+            </div>
+        </li>
+        <li>
+            <label for="third">為什麼有人喜歡黑咖啡而有人喜歡加糖或奶？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="third">
+            <div class="content">
+                <p>口味是主觀的，每個人的味覺喜好都不同。黑咖啡強調咖啡豆的風味，而加糖或奶可以平衡咖啡的苦味，同時增添甜味和奶香。</p>
+            </div>
+        </li>
+        <li>
+            <label for="fourth">咖啡對健康有什麼好處？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="fourth">
+            <div class="content">
+                <p>一些研究顯示，適量的咖啡攝入與降低患某些慢性疾病風險（如某些癌症和帕金森氏症）有關聯。然而，每個人的身體反應不同，過度飲用也可能有潛在的風險。</p>
+            </div>
+        </li>
+        <li>
+            <label for="fifth">咖啡對睡眠的影響是什麼？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="fifth">
+            <div class="content">
+                <p>咖啡因是一種刺激物質，攝取過量可能導致失眠或影響睡眠質量。建議在下午避免攝取含咖啡因的飲品，尤其是對於容易受到咖啡因刺激的人。</p>
+            </div>
+        </li>
+        <li>
+            <label for="sixth">咖啡對健康有什麼好處？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="sixth">
+            <div class="content">
+                <p>冷萃咖啡是通過將咖啡豆與冷水浸泡，然後慢慢過濾而製成的。冰滴咖啡是通過讓滴水器緩慢滴落冷水過濾咖啡豆而製成的。這些製作方式通常產生濃縮且口感較為柔和的咖啡。</p>
+            </div>
+        </li>
+        <li>
+            <label for="seventh">為什麼咖啡有酸味？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="seventh">
+            <div class="content">
+                <p>咖啡的酸味主要來自咖啡豆中的天然酸。不同的咖啡豆和烘焙方法會產生不同程度的酸味，這是咖啡風味的一個重要元素。</p>
+            </div>
+        </li>
+        <li>
+            <label for="eighth">咖啡對健康有什麼好處？<span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="eighth">
+            <div class="content">
+                <p>最好將咖啡豆保存在密封容器中，避免陽光直射和濕氣。避免長時間暴露在空氣中，以保持咖啡的新鮮度。</p>
+            </div>
+        </li>
+    </ul>
+    <footer>
+        <div class="logo">
+            <a href="./index.html">
+                <img class="imm" src="./images/favicon.ico" alt="logo">
+            </a>
+        </div>
+
+        <div class="text">
+            <ul>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">線上商店</a></li>
+                <li><a href="">常見問題</a></li>
+                <li><a href=""登入></a></li>
+            </ul>
+            <p>DESIGN BY CHANG CHUN-CHIEH</p>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各別商品</title>
+    <link rel="stylesheet" href="../scss/all.css">
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo">
+                <a href="../index.html">
+                    <img class="imm" src="../images/favicon.ico" alt="logo">
+                    <p class="text">Jay's Cafe</p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo_name">Jay's Cafe</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ui class="links">
+                    <li><a href="../index.html">首頁</a></li>
+                    <li><a href="../about.html">關於我們</a></li>
+                    <li>
+                        <a href="">咖啡餐食</a>
+                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                        <ul class="htmlcss-sub-menu sub-menu">
+                            <li class="more">
+                                <a href="../menu/cafe.html">經典飲品</a>
+                            </li>
+                            <li><a href="../menu/dessert.html">輕食</a></li>
+                            <li><a href="../menu/food.html">甜點</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../shop/shop.html">線上商店</a>
+                    </li>
+                    <li>
+                        <a href="../question.html">常見問題</a>
+                    </li>
+                    <li class="nav-user"><a href="">會員登入</a></li>
+                </ui>
+            </div>
+
+            <div class="side-icon">
+                <!-- user -->
+                <div class="user-icon">
+                    <a href="../login.html">
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <a href="../shop/checkout.html">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </div>
+                <!-- search -->
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section-bg-shop">
+        <h1>線上商店</h1>
+    </section>
+    <div class="shop-container shop-container-product">
+        <!-- 左側導覽列 -->
+        <div class="shop-left">
+            <!-- 加購商品 -->
+            <div class="parent-tab">
+                <input type="checkbox" name="tab" id="tab-0" checked>
+                <label for="tab-0">
+                    <h2>加購商品</h2>
+                    <div class="icon">
+                        <i class='bx bx-plus'></i>
+                    </div>
+                </label>
+                <div class="content">
+                    <div class="extra">
+                        <div class="extra-item">
+                            <div class="extra-img">
+                                <img src="../images/shop/tote-bag.jpg" alt="">
+                            </div>
+                            <div class="exrta-content">
+                                <p>傑森黑提袋(大)</p>
+                                <p>NT$20</p>
+                            </div>
+                        </div>
+                        <div class="extra-item">
+                            <div class="extra-img">
+                                <img src="../images/shop/tote-bag.jpg" alt="">
+                            </div>
+                            <div class="exrta-content">
+                                <p>傑森黑提袋(小)</p>
+                                <p>NT$15</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- 咖啡小物 -->
+            <div class="parent-tab">
+                <input type="checkbox" name="tab" id="tab-3">
+                <label for="tab-3">
+                    <span>咖啡小物</span>
+                    <div class="icon">
+                        <i class='bx bx-plus'></i>
+                    </div>
+                </label>
+                <div class="content">
+                    <a href="">環保杯</a>
+                </div>
+            </div>
+            <!-- 咖啡豆 -->
+            <div class="parent-tab">
+                <input type="checkbox" name="tab" id="tab-1">
+                <label for="tab-1">
+                    <span>咖啡豆</span>
+                    <div class="icon">
+                        <i class='bx bx-plus'></i>
+                    </div>
+                </label>
+                <div class="content">
+                    <a href="">淺焙</a>
+                    <a href="">中焙</a>
+                    <a href="">中深焙</a>
+                    <a href="">深焙</a>
+                </div>
+            </div>
+            <!-- 濾掛式咖啡 -->
+            <div class="parent-tab">
+                <input type="checkbox" name="tab" id="tab-2">
+                <label for="tab-2">
+                    <span>濾掛式咖啡</span>
+                    <div class="icon">
+                        <i class='bx bx-plus'></i>
+                    </div>
+                </label>
+                <div class="content">
+                    <a href="">精品系列</a>
+                    <a href="">熱銷系列</a>
+                </div>
+            </div>
+        </div>
+        <!-- 商品細節 -->
+        <div class="shop-right">
+            <!-- products-all -->
+            <h2>商品介紹</h2>
+            <div class="product">
+                <div class="product-img">
+                    <img src="../images/shop/cafe.jpg" alt="">
+                </div>
+                <div class="product-content">
+                    <h2>巴拿馬 翡翠莊園 Jaramillo 綠標瑰夏 日曬</h2>
+                    <ul>
+                        <li>豐富熱帶水果氣息、藍莓、黑醋栗酸甜、杏仁奶質的喉韻</li>
+                        <li>產地：衣索比亞、瓜地馬拉</li>
+                        <li>主要處理法：日曬</li>
+                        <li>榮獲2015美國Coffee Review 92分高分</li>
+                        <li>Pomona是羅馬神話中，為美好滋味守護果樹耕種的果樹女神</li>
+                    </ul>
+                    <p>NT$160</p>
+                    <div class="product-button">
+                        <input type="number">
+                        <a href="./checkout.html">
+                            <button>加入購物車</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-botton">
+                <h2>商品特色</h2>
+                <p>【極精品】
+                    巴拿馬 翡翠莊園 Jaramillo 綠標瑰夏 日曬
+                    【烘豆師筆記】
+                    生豆時聞得到淡淡的莓果香氣，為了加強這樣美好的風味，前期使用了中等的節奏進行烘焙，將水果般甜膩、果汁般的口感呈現出來。至一爆的發展，將節奏慢下來，讓口感能夠更突出而不掩蓋香氣。
+                    初聞乾香氣時，帶有一點藍莓、百香果的調性。在熱時品飲，有些微的枇杷清香，和著熱帶水果的風味。酸甜感有如荔枝輕輕點綴在舌面。尾韻帶一點異國香料感，回甘性強如糖蜜，最後以淡雅的桂圓作陪襯，整杯咖啡給人一種身處於異國的熱帶風情。</p>
+                    <h2>商品規格</h2>
+                    <ul>
+                        <li>新鮮咖啡烘焙豆</li>
+                        <li>重量100g</li>
+                        <li>有效期限一年</li>
+                        <li>製造日期見包裝上標示</li>
+                        <li>單向排氣閥鋁箔袋包裝</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <a href="../index.html">
+                <img class="imm" src="../images/favicon.ico" alt="logo">
+            </a>
+        </div>
+
+        <div class="text">
+            <ul>
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">線上商店</a></li>
+                <li><a href="">常見問題</a></li>
+            </ul>
+            <p>DESIGN BY CHANG CHUN-CHIEH</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

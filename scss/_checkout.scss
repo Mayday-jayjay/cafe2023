@@ -1,0 +1,260 @@
+.checkout{
+    background: #fff;
+    padding:10px 180px;
+    margin-bottom: 100px;
+    .steps{
+        display: flex;
+        justify-content: space-around;
+        padding: 60px 0;
+        font-size: 1.1rem;
+        color: $cafe;
+        font-weight: 500;
+        .bxs-chevron-right{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        p{
+            margin: 2px;
+        }
+
+    }
+    // 確認商品資訊
+    .detail{
+        padding: 10px;
+        position: relative;
+        .detail-table{
+            width: 100%;
+            .top{
+                th{
+                    text-align: left;
+                    font-size: 1.2rem;
+                }
+                .top-title{
+                    width: 45%;
+                }
+                .top-img{
+                    width: 12%;
+                }
+            }
+            .middle{                
+                .middle-img{
+                    padding: 2px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .middle-select{
+                    select{
+                        width: 50px;
+                    }
+                }
+                .delete{
+                    cursor: pointer;
+                }
+            }
+        }
+        .count{
+            font-size: 1.2rem;
+            display: grid;
+            justify-content: end;
+            padding: 10px 10px 0 0;
+        }
+        .detail-hr{
+            width: 250px;
+            position: absolute;
+            border-bottom:2px solid $cafe;
+            right: 20px;
+        }
+    }
+    .checkout-button{
+        width: 120px;
+        margin-top: 10px;
+        float: right;
+        button{
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 3px;
+            border: none;
+            background: $cafe;
+            color: White;
+            padding: 10px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.9;
+                transform: scale(0.9);
+            }
+
+        }
+    }
+    // 填寫資料
+    .buy{
+        background: #fdfcfc;
+        padding: 35px 50px;
+        min-width: 420px;
+        border-radius: 5px;
+        h1{
+            font-size: 30px;
+            text-align: center;
+            color: #1f1f1f;
+            position: relative;
+        }
+        form{
+            width: 100%;
+            position: relative;
+            margin: 30px auto 0 auto;
+            .row{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+                gap: 20px 30px;
+                margin-bottom: 20px;
+                label{
+                    color: #1f1f1f;
+                    font-size: 14px;
+                }
+                input ,textarea,select{
+                    width: 100%;
+                    font-weight: 400;
+                    padding: 12px 10px;
+                    border: 1px solid #c4cae0;
+                    border-radius: 2px;
+                    margin-top: 5px;
+                    resize: none;
+                }
+                input:focus ,textarea:focus{
+                    outline: none;
+                    border: 2px solid $cafe;
+                }
+            }
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                font-size: 1rem;
+                background: $cafe;
+                position: absolute;
+                right: 0;
+                bottom: -50px;
+                cursor: pointer;
+                margin-top: 15px;
+                a{
+                    color: White;
+                    text-decoration: none;
+                }
+                &:hover{
+                    opacity: 0.9;
+                    transform: scale(0.9);
+                }
+            }
+        }
+
+    }    
+    .success{
+        display: flex;
+        justify-content: center;
+        .success-text{
+            max-width: 600px;
+            padding: 10px;
+            h1{
+                margin: 5px;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+            }
+            button{
+                width: 100%;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                font-size: 1rem;
+                background: $cafe;
+                cursor: pointer;
+                a{
+                    color: White;
+                    text-decoration: none;
+                }
+                &:hover{
+                    opacity: 0.9;
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 1020px) {
+    .checkout{
+        padding:10px 120px;
+    }
+}
+@media (max-width: 800px) {
+    .checkout{
+        padding:10px 15px;
+        .steps{
+            padding: 20px 0;
+            font-size: 12px;
+            .bxs-chevron-right{
+                font-size: 14px;
+                margin-top: 2px;
+            }
+            p{
+                margin: 0;
+            }
+    
+        }
+        .detail{
+            .detail-hr{
+                width: 170px;
+            }
+        }
+    }
+}
+@media (max-width: 540px) {
+    .checkout{
+        padding:10px 5px;
+        .detail{
+            // padding: 0;
+            .count{
+                font-size: 14px;
+            }
+            .detail-table{ 
+                .top th{
+                    font-size: 12px;
+                }
+                .middle{
+                    font-size: 12px;
+                    .middle-img{
+                        padding: 1px;
+                    }
+                }
+                .middle .middle-select{
+                        select{
+                            width: 30px;
+                        }
+                    }
+                }
+        }
+        .checkout-button{
+            width: 80px;
+            height: 30px;
+            button{
+                height: 100%;
+                font-size: 14px;
+                padding: 1px;
+    
+            }
+        }
+        .buy{
+            min-width: 0;
+            padding: 15px 20px;
+            form .row{
+                grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            }
+        }
+    }
+}

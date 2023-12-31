@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <link rel="stylesheet" href="./scss/all.css">
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="imm" src="./images/favicon.ico" alt="logo">
+                    <p class="text">Jay's Cafe</p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo_name">Jay's Cafe</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ui class="links">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li>
+                        <a href="">咖啡餐食</a>
+                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                        <ul class="htmlcss-sub-menu sub-menu">
+                            <li class="more">
+                                <a href="./menu/cafe.html">經典飲品</a>
+                            </li>
+                            <li><a href="./menu/food.html">輕食</a></li>
+                            <li><a href="./menu/dessert.html">甜點</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./shop/shop.html">線上商店</a>
+                    </li>
+                    <li>
+                        <a href="./question.html">常見問題</a>
+                    </li>
+                    <li class="nav-user"><a href="">會員登入</a></li>
+                </ui>
+            </div>
+
+            <div class="side-icon">
+                <!-- user -->
+                <div class="user-icon">
+                    <a href="./login.html">
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <a href="./shop/checkout.html">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </div>
+                <!-- search -->
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="login-container">
+        <div class="container">
+            <div class="forms">
+                <!-- 登入 -->
+                <div class="form login">
+                    <span class="title">會員登入</span>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" placeholder="請輸入信箱" required>
+                            <i class='bx bxs-envelope icon'></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="請輸入密碼" required>
+                            <i class='bx bxs-lock-alt icon'></i>
+                            <i class='bx bxs-hide showHidePw'></i>
+                        </div>
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck"ㄨㄤ>
+                                <label for="logCheck" class="text">記住密碼</label>
+                            </div>
+                            <a href="./lost-password.html" class="text">忘記密碼？</a>
+                        </div>
+                        <!-- 登入 -->
+                        <div class="input-field button">
+                            <input type="button" value="登入">
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text">沒有帳號？
+                            <a href="#" class="text signup-link">立即註冊</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- 註冊 -->
+                <div class="form signup">
+                    <span class="title">會員註冊</span>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" placeholder="請輸入姓名" required>
+                            <i class='bx bx-user-circle'></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="請輸入信箱" required>
+                            <i class='bx bxs-envelope icon'></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="請輸入密碼" required>
+                            <i class='bx bxs-lock-alt icon'></i>
+                            <i class='bx bxs-hide showHidePw'></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" class="number" placeholder="請輸入電話" required>
+                            <i class='bx bx-phone'></i>
+                        </div>
+                        <!-- 註冊 -->
+                        <div class="input-field button">
+                            <input type="button" value="登入">
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text">返回登入？
+                            <a href="#" class="text login-link">立即登入</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <a href="./index.html">
+                <img class="imm" src="./images/favicon.ico" alt="logo">
+            </a>
+        </div>
+        <div class="text">
+            <ul>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">線上商店</a></li>
+                <li><a href="">常見問題</a></li>
+                <li><a href=""登入></a></li>
+            </ul>
+            <p>DESIGN BY CHANG CHUN-CHIEH</p>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="./script/login.js"></script>
+</body>
+</html>

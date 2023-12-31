@@ -1,0 +1,44 @@
+#accordion{
+    margin: 20px auto;
+    max-width: 1080px;
+    padding: 5px;
+    li{
+        border: 1px solid $cafe;
+        list-style: none;
+        width: 100%;
+        margin-bottom: 10px;
+        background: $white;
+        padding: 10px;
+        border-radius: 4px;
+        label{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: $cafe;
+            span{
+                transform: rotate(90deg);
+                font-size: 1.4rem;
+                color: $cafe;
+            }
+        }
+        .content{
+            display: flex;
+            padding: 0 30px;
+            line-height: 26px;
+            max-height: 0;
+            overflow: hidden;
+            font-size: 1.2rem;
+            transition: max-height 0.7s;
+        }
+    }
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    overflow: auto;
+    max-height: 500px;
+}

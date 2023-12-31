@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>確認商品</title>
+    <link rel="stylesheet" href="../scss/all.css">
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo">
+                <a href="../index.html">
+                    <img class="imm" src="../images/favicon.ico" alt="logo">
+                    <p class="text">Jay's Cafe</p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo_name">Jay's Cafe</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ui class="links">
+                    <li><a href="../index.html">首頁</a></li>
+                    <li><a href="../about.html">關於我們</a></li>
+                    <li>
+                        <a href="">咖啡餐食</a>
+                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                        <ul class="htmlcss-sub-menu sub-menu">
+                            <li class="more">
+                                <a href="../menu/cafe.html">咖啡餐食</a>
+                                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="">拿鐵</a></li>
+                                    <li><a href="">美式</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../menu/food.html">輕食</a></li>
+                            <li><a href="../menu/dessert.html">甜點</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../shop.html">線上商店</a>
+                    </li>
+                    <li>
+                        <a href="../question.html">常見問題</a>
+                        <i class='bx bxs-chevron-down arrow js-arrow'></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="">咖啡</a></li>
+                            <li><a href="">甜點</a></li>
+                            <li><a href="">輕食</a></li>
+                            <li><a href="">如何購物</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-user"><a href="">會員登入</a></li>
+                </ui>
+            </div>
+
+            <div class="side-icon">
+                <!-- user -->
+                <div class="user-icon">
+                    <a href="../login.html">
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <a href="">
+                        <i class='bx bxs-cart'></i>
+                    </a>
+                </div>
+                <!-- search -->
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section-bg-shop"></section>
+    <div class="checkout">
+        <div class="steps">
+            <p>Step 1.確認商品資訊</p>
+            <i class='bx bxs-chevron-right' ></i>
+            <p>Step 2.填寫寄送資料</p>
+            <i class='bx bxs-chevron-right' ></i>
+            <p>Step 3.購物完成</p>
+        </div>
+        <div class="detail">
+            <table class="detail-table"> 
+                <tr class="top">
+                  <th class="top-img"></th>
+                  <th class="top-title">商品</th>
+                  <th>單價</th>
+                  <th>數量</th> 
+                  <th>總計</th>
+                  <th></th>
+                </tr>
+                <tr class="middle">
+                    <td class="middle-img">
+                        <img src="../images/shop/cafe.jpg" alt="">
+                    </td>
+                    <td class="middle-title">
+                        濾掛式咖啡-果樹女神
+                    </td>
+                    <td>$150</td>
+                    <td class="middle-select">
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </td>
+                    <td>$150</td>
+                    <td class="delete">X</td>
+                </tr>
+                <tr class="middle">
+                    <td class="middle-img">
+                        <img src="../images/shop/cafe.jpg" alt="">
+                    </td>
+                    <td class="middle-title">
+                        濾掛式咖啡-果樹女神
+                    </td>
+                    <td>$150</td>
+                    <td class="middle-select">
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </td>
+                    <td>$150</td>
+                    <td class="delete">X</td>
+                </tr>
+                <tr class="middle">
+                    <td class="middle-img">
+                        <img src="../images/shop/cafe.jpg" alt="">
+                    </td>
+                    <td class="middle-title">
+                        濾掛式咖啡-果樹女神
+                    </td>
+                    <td>$150</td>
+                    <td class="middle-select">
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </td>
+                    <td>$150</td>
+                    <td class="delete">X</td>
+                </tr>
+            </table>
+            <div class="detail-hr"></div>
+            <div class="count">
+                <p>小計：NT$450</p>
+                <p>運費：NT$45</p>
+                <p>總計：NT$500</p>
+            </div>
+        </div>
+        <div class="checkout-button">
+            <a href="./checkout-data.html">
+                <button>下一步</button>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <a href="../index.html">
+                <img class="imm" src="../images/favicon.ico" alt="logo">
+            </a>
+        </div>
+
+        <div class="text">
+            <ul>
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">線上商店</a></li>
+                <li><a href="">常見問題</a></li>
+            </ul>
+            <p>DESIGN BY CHANG CHUN-CHIEH</p>
+        </div>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+</html>

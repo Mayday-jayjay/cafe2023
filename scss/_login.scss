@@ -1,0 +1,151 @@
+.login-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/login/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    opacity: 0.9;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    .forms{
+        display: flex;
+        width: 200%;
+        height: 440px;
+        transform: height 0.2s ease;
+        .title{
+            position: relative;
+            font-size: 27px;
+            font-weight: 600;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: $cafe;
+                height: 3px;
+                width: 55px;
+                
+            }
+        }
+        .input-field{
+            position: relative;
+            height: 50px;
+            width: 100%;
+            margin-top: 30px;
+            input{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                padding: 0 35px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid $cafe;
+                border-top: 2px solid transparent;
+                transition: all 0.2s ease;
+
+                &:is(foucs, :valid){
+                    border-bottom-color: $cafe;
+                }
+                &:is(foucs, :valid) ~ i{
+                    color: $cafe;
+                }
+            }
+            i{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #999;
+                font-size: 23px;
+                &.icon{
+                   left: 0;
+                }
+                &.showHidePw{
+                    right: 0;
+                    cursor: pointer;
+                    padding: 10px;
+                 }
+            }
+        }
+        .checkbox-text{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .checkbox-content{
+                display: flex;
+                align-items: center;
+                input{
+                    margin: 0 8px 2px 4px;
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .text{
+            color: #333;
+            font-size: 14px;
+        }
+        .button{
+            margin-top: 35px;
+            input{
+                border: none;
+                background: $cafe;
+                color: $white;
+                letter-spacing: 3px;
+                font-size: 1.2rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    transform: scale(0.9);
+                }
+            }
+        }
+        .login-signup{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    .form{
+        width: 50%;
+        padding: 30px;
+        transition: margin-left 0.18s ease;
+    }
+    .lost-ps{
+        height: 380px;
+    }
+    &.active .login{
+        margin-left: -50%;
+        opacity: 0;
+        transition: margin-left 0.18s ease,
+                     opacity 0.15s ease;
+    }
+    .signup{
+        opacity: 0;
+        transition: opacity 0.09s ease;
+    }
+    &.active .signup{
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+    &.active .forms{
+        height: 550px;
+    }
+    &.active .lost-ps{
+        height: 400px;
+    }
+}
+
+
